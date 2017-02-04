@@ -6,13 +6,28 @@
 		max-width: 100%;
 	}
 
-	li{
-		margin-bottom: 10px;
+	ul {
+		margin-left: 0;
+		padding-left: 0;
 	}
 
+	li{
+		margin-bottom: 10px;
+		list-style: none;
+		margin-left: 0;
+	}
+
+	.site-footer & a {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
 .widget-title{
 	font-size: $font__size-h2;
 	text-transform: uppercase;
+
+	.site-footer & {
+		margin-bottom: 50px;
+	}
 }

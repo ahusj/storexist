@@ -1,9 +1,17 @@
 .site-footer{
-  margin-top: 80px;
-  border-top: 1px solid #ddd;
+  color: #fff;
+  padding-top: 300px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .site-info{
   padding: 20px 0 40px 0;
   text-align: center;
+
+  a {
+  	color: #fff;
+  }
 }
