@@ -1,0 +1,13 @@
+@import "../layout/content-sidebar";
+@import "../layout/sidebar-content";
+@import "../layout/content-footer";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+@import "primary/meta";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";

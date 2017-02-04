@@ -1,0 +1,100 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin no-mapa {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin breakpoint($point) {
+    @if $point == mini-desktop {
+        @media (max-width: 991px) { @content; }
+    }
+    @if $point == tablet {
+        @media (max-width: 767px) { @content; } 
+    }
+    @if $point == mobile {
+        @media (max-width: 480px) { @content; }
+    }
+}
+
+@mixin breakpoint-custom($param) {
+    @media ($param) { @content; }
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin clearfix-before {
+    &:before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin transform($param) {
+    -webkit-transform: $param;
+    -ms-transform: $param;
+    -o-transform: $param;
+    transform: $param;
+}
+
+@mixin transition($param) {
+    -webkit-transition: $param;
+    -o-transition: $param;
+    transition: $param;
+}
+
+@mixin no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+@mixin box-sizing($param) {
+    -webkit-box-sizing: $param;
+    -moz-box-sizing: $param;
+    box-sizing: $param;
+}
+
+
+@mixin shadow($param) {
+    -webkit-box-shadow: $param;
+    -moz-box-shadow: $param;
+    box-shadow: $param;
+}
+
+@mixin border-radius($a) {
+    -moz-border-radius: $a;
+    -webkit-border-radius: $a;
+    -ms-border-radius: $a;
+    border-radius: $a;
+}

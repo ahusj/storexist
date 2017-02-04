@@ -1,0 +1,10 @@
+.entry-meta,
+.comment-metadata,
+.entry-footer{
+  color: lighten($color__text-main, 35%);
+
+  a{
+    color: lighten($color__text-main, 35%);
+  }
+
+}
