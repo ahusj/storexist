@@ -1,9 +1,10 @@
+
 .sticky {
 	display: block;
 }
 
 .hentry {
-	margin: 0 0 2.5em;
+	margin: 0 0 50px;
 }
 
 .byline,
@@ -16,11 +17,13 @@
 	display: inline;
 }
 
+/*
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
+*/
 
 .page-links {
 	clear: both;
@@ -36,4 +39,59 @@
 .archive-description{
 	font-family: $font__quote;
 	font-style: italic;
+}
+
+
+.entry-header{
+	margin-bottom: 50px;
+}
+
+.navigation{
+	&.posts-navigation,
+	&.post-navigation{
+		margin-top: 50px;
+		font-weight: bold;
+
+		.nav-previous,
+		.nav-next{
+			a{
+				display: block;
+		    position: relative;
+				&:before{
+		      font-family: simple-line-icons;
+		      position: absolute;
+		      top: 3px;
+					font-size: 75%;
+		    }
+		  }
+		}
+
+	}
+
+	.nav-previous{
+		a{
+			margin-left: 20px;
+			&:before{
+				content: "\e605";
+				left: -20px;
+			}
+		}
+	}
+
+	.nav-next{
+		a{
+			margin-right: 20px;
+			&:before{
+				content: "\e606";
+				right: -20px;
+			}
+		}
+	}
+
+}
+
+.entry-content,
+.comment-content,
+.widget-area{
+	line-height: 2;
 }

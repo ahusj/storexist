@@ -1,10 +1,23 @@
 .entry-meta,
 .comment-metadata,
-.entry-footer{
+.entry-footer,
+.logged-in-as{
   color: lighten($color__text-main, 35%);
 
   a{
     color: lighten($color__text-main, 35%);
+
+    &:hover{
+      color: $color__text-main;
+    }
+
   }
 
+}
+
+.entry-footer{
+  .cat-links,
+  .tags-links{
+    margin-right: 10px;
+  }
 }

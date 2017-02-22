@@ -21,8 +21,8 @@
 
 			<div class="site-footer__top">
 
-				<div class="row">
-					
+				<div class="row widget-area">
+
 					<div class="col-sm-6 col-md-3">
 						<section class="site-widget widget">
 							<h2 class="widget-title">Our Services</h2>

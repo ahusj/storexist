@@ -1,0 +1,21 @@
+.woocommerce div.product{
+
+  p.price,
+  span.price {
+    color: $color_primary;
+    font-size: 22px;
+  }
+
+
+  button.single_add_to_cart_button.button.alt{
+    background-color: $color_primary;
+    color: #fff;
+
+    &:hover{
+      background-color: transparent;
+      color: $color_primary;
+    }
+
+  }
+
+}

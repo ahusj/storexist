@@ -1,0 +1,36 @@
+.woocommerce ul.products li.product {
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .price {
+    font-size: 16px;
+    color: $color_primary;
+  }
+
+}
+
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  @include border-radius(3px);
+}
+
+.woocommerce {
+  a.add_to_cart_button,
+  button.single_add_to_cart_button.button.alt{
+    background-color: transparent;
+    color: $color_primary;
+    border: 1px solid $color_primary;
+
+    &:hover {
+      background-color: $color_primary;
+      color: #fff;
+      border-color: $color_primary;
+    }
+
+  }
+}

@@ -1,15 +1,28 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
 	border: 1px solid;
 	border-color: $color__border-button;
-	border-radius: 3px;
 	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
 	line-height: 1;
 	padding: .6em 1em .4em;
+
+	@include border-radius(50px);
+	border: none;
+	text-transform: uppercase;
+	padding: 14px 20px;
+	font-weight: 700;
+	font-size: 100%;
+	color: #fff;
+
+	&.search-submit{
+		border-radius: 0;
+	}
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -20,3 +33,16 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+/*
+input[type="submit"]#submit{
+	font-size: 100%;
+	color: #fff;
+	background-color: #eaa32f;
+	@include border-radius(50px);
+	border: none;
+	text-transform: uppercase;
+	padding: 12px 20px;
+	font-weight: 700;
+}
+*/

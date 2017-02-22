@@ -1,0 +1,14 @@
+.edit-link{
+  float: right;
+  a{
+    position: relative;
+    margin-left: 20px;
+    &:before{
+      font-family: simple-line-icons;
+      content: "\e05f";
+      position: absolute;
+      top: 0;
+      left: -20px;
+    }
+  }
+}

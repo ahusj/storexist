@@ -65,6 +65,9 @@ function storexist_setup() {
 		'default-image' => '',
 	) ) );
 
+	// Declare WooCommerce support.
+	add_theme_support( 'woocommerce' );
+
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
@@ -106,7 +109,7 @@ add_action( 'widgets_init', 'storexist_widgets_init' );
  */
 function storexist_scripts() {
 	wp_enqueue_style( 'storexist-notosans', '//fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i' );
-	
+
 	wp_enqueue_style('storexist-fa', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
 	wp_enqueue_style('storexist-lineicon', '//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css' );
